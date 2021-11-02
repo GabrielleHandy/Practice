@@ -2,7 +2,7 @@
 import random
 # Put your code here
 
-name = input("Hello! What is your name? ")
+name = input("Hello!! What is your name? ")
 print(f"{name}, I'm thinking of a number between 1 and 100. Try to guess my number.")
 num = random.randint(1, 100)
 counter = 0
