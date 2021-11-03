@@ -14,8 +14,7 @@ def main():
     counter = 1
 
     # randomizes number btw 1 and 100
-    # num = random.randint(1, 100)
-    num = 5
+    num = random.randint(1, 100)
 
     # call first user guess
     guess = validate_input()
