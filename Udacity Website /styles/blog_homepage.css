@@ -1,3 +1,37 @@
-/* @media(max-width: 320px)
-@media(min-width: 901px)
-@media(min-width: 600px) and (max-width: 900px) */
+.container{
+    display: grid;
+}
+.nav-bar{
+    display: flex;
+}
+.footer{
+    display: grid;
+
+}
+@media(max-width: 320px){
+    .container{
+        
+        grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "blog-1 blog-1 blog-1"
+        "blog-2 blog-2 blog-2"
+        "ft ft ft";
+    }
+    .nav-bar{
+        grid-area: nav;
+
+    }
+    #blog-1{
+        grid-area: blog-1;
+    }
+    #blog-2{
+        grid-area: blog-2;
+    }
+    .footer{
+        grid-area: ft;
+    }
+}
+
+@media(min-width: 901px){}
+@media(min-width: 600px) and (max-width: 900px){}
