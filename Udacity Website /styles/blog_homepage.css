@@ -1,13 +1,22 @@
 body{
     background-color: hsla(204, 20%, 80%, 0.556);
 }
-.container{
+.blog a, p{
+    font-family: Nanum Myeongjo, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+#container{
     display: grid;
     
+}
+#others{
+    display: grid;
 }
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    background-color: #e8eadc;
 }
 .nav-bar h2{
     margin-top: -1px;
@@ -15,30 +24,36 @@ body{
 
 .blog{
     text-align: center;
-    margin: 50px 0px 0px 50px;
-    padding: 10px 20px 20px 20px;
     background-color: rgb(253, 248, 243);
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 33px -3px 50px;
+    padding: 10px 20px 28px 20px;  
 }
 .blog img{
-    height: 50%;
+    
     width: 80%;
+    border: 2px solid;
 }
 .title{
-    text-decoration: underline;
+   
+    font-family: 'DM Serif Display', Times, 'Times New Roman', serif;
 }
+
 .footer{
     margin-top: 50px;
     display: grid;
-    grid-template-areas: "about about sub";
+    grid-template-areas: "about"
+    "sub";
     border-top: solid;
 
 }
 #about{
     grid-area: about;
-    margin-right: 50px;
-    border-right: solid;
-    background-color: hsla(74, 35%, 90%, 0.884);
+    background-color: #e8eadc;
+    font-size: 20px;
 }
 
 #ft-img{
@@ -54,6 +69,9 @@ body{
 }
 #subscribe{
     grid-area: sub;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #sub-btn{
     background-color: rgb(237, 212, 195);
@@ -64,27 +82,25 @@ body{
 }
 a {
     color: #141477;
-    font-weight: bold;
+    
 }
 @media(max-width: 320px){
-    .container{
-
+    #container{
+        
         grid-template-areas:
         "nav nav nav"
         "main main main"
-        "blog-1 blog-1 blog-1"
-        "blog-2 blog-2 blog-2"
+        "other other other"
         "ft ft ft";
     }
     .nav-bar{
         grid-area: nav;
 
     }
-    #blog-1{
-        grid-area: blog-1;
-    }
-    #blog-2{
-        grid-area: blog-2;
+    #others{
+        grid-area: other;
+        display: grid;
+        
     }
     .footer{
         grid-area: ft;
@@ -92,27 +108,79 @@ a {
 
 }
 
-@media(min-width: 901px){}
+@media(min-width: 901px){
+    #others{
+        padding: 10px 20px 50px 20px;
+        display: flex;
+
+    }
+    .main{
+        display: grid;
+        grid-template-areas: 
+        "img title"
+        "img summary"
+        "img read";
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(253,248,243,1) 0%, rgb(225 195 114) 100%);
+        padding: 29px 20px 50px 20px;
+
+    }
+    
+    .main .title{
+        grid-area: title;
+
+    }
+    .main .summary{
+        grid-area: summary;
+        padding: 21px;
+        background: #ffffffb8;
+    }
+    .main #img{
+        grid-area: img;
+       
+    }
+    .main img{
+        height: 90%;
+    }
+    .main a{
+        grid-area: read;
+    }
+
+}
+
 @media(min-width: 600px) and (max-width: 900px){
-    .container{
-
-        grid-template-areas:
-        "nav nav nav nav"
-        "main main main main"
-        "blog-1 blog-1 blog-2 blog-2"
-        "ft ft ft ft";
-    }
-    .nav-bar{
-        grid-area: nav;
+    #others{
+        display: flex;
 
     }
-    #blog-1{
-        grid-area: blog-1;
+    .main{
+        display: grid;
+        grid-template-areas: 
+        "img title"
+        "img summary"
+        "img read";
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(253,248,243,1) 0%, rgb(225 195 114) 100%);
+        padding: 29px 20px 50px 20px;
+
     }
-    #blog-2{
-        grid-area: blog-2;
+    
+    .main .title{
+        grid-area: title;
+
     }
-    .footer{
-        grid-area: ft;
+    .main .summary{
+        grid-area: summary;
+        padding: 21px;
+        background: #ffffffb8;
     }
+    .main #img{
+        grid-area: img;
+       
+    }
+    .main img{
+        height: 90%;
+    }
+    .main a{
+        grid-area: read;
+    }
+
 }
