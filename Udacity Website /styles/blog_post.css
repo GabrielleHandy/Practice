@@ -1,22 +1,66 @@
-@import "styles/blog_homepage.css"
-
-/* body{
+@import "styles/blog_homepage.css";
+#container{
+    display: grid;
+}
+body{
     background-color: hsla(204, 20%, 80%, 0.556);
 }
-.title{
-   
+#title{
+    text-align: center;
     font-family: 'DM Serif Display', Times, 'Times New Roman', serif;
+    font-size: 50px;
 }
+#read-time{
+    text-align: center;
+    color: blue;
+
+}
+
 p{
     font-family: Nanum Myeongjo, Times, 'Times New Roman', serif;
-    font-weight: bold;
+    
     font-size: 25px;
 }
 .nav-bar{
     display: flex;
     justify-content: space-between;
     background-color: #e8eadc;
+    align-items: center;
 }
-#article{
-    padding: 25px;
-} */
+.nav-bar img {
+    height: 200px;
+}
+#sub{
+    margin-right: 127px;
+}
+article{
+    padding: 100px;
+    text-indent: 50px;
+    background-color: #fbfeff;
+}
+#recommended{
+    margin-top: 25px;
+}
+#author{
+    border-top: 2px solid #a3a9af;
+    display: flex;
+    border-bottom: 2px solid;
+    background-color: #e8eadc;
+}
+#author img{
+    width: 212px;
+    height: 80%;
+}
+#author-socials{
+    display: inline;
+    margin-left: 60px;
+    text-align: center;
+    text-decoration: underline;
+}
+#author-socials img{
+    height: 93px;
+    width: auto;
+}
+.bold{
+    font-weight: bold;
+}
