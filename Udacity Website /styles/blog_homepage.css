@@ -1,31 +1,6 @@
-body{
-    background-color: hsla(204, 20%, 80%, 0.556);
-}
-#container{
-    display: grid;
-    
-}
-a {
-    color: #141477;
-    
-}
-
-/* NAV-BAR */
-
-.nav-bar{
-    display: flex;
-    justify-content: space-around;
-    background-color: #e8eadc;
-    align-items: self-end;
-}
-
-.nav-bar img{
-    height: 200px;
-}
-
+@import url("blog_base.css");
 
 /* BLOGS */
-
 .blog{
     text-align: center;
     background-color: rgb(253, 248, 243);
@@ -46,7 +21,7 @@ a {
 .blog:hover{
     box-shadow: #2d4d5761 0px 3px 20px 1px;
 }
-.blog a, p{
+.blog a {
     font-family: Nanum Myeongjo, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 25px;
@@ -112,7 +87,7 @@ input{
         "other other other"
         "ft ft ft";
     }
-    .nav-bar{
+    header{
         grid-area: nav;
 
     }
@@ -121,8 +96,11 @@ input{
         display: grid;
         
     }
-    .footer{
+    footer{
         grid-area: ft;
+    }
+    .navbar a{
+        padding: 25px;
     }
 
 }

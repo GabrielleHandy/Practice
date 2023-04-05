@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/blog_base.css">
     <link rel="stylesheet" href="styles/blog_homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,15 +12,17 @@
 </head>
 <body>
     <div id="container">
-        <div class="nav-bar">
-            <img src="styles/images/[Original size] store.png" alt="web logo">
-            <a href="#about"><p>About</p></a> 
-            <a  href="#subscribe"><p>Subscribe</p></a>
-            
-        </div>
+        <header>
+            <div class="nav-bar">
+                <img src="styles/static/[Original size] store.png" alt="web logo">
+                <a href="#about"><p>About</p></a> 
+                <a id="sub" href="#subscribe"><p>Subscribe</p></a>
+                
+            </div>
+        </header>
         <div class="blog main">
             <figure>
-                <img src="styles/images/man-gbb73b2969_640.jpg" alt="">
+                <img src="styles/static/man-gbb73b2969_640.jpg" alt="">
                 <figcaption>Man hard at work by Vecteezy</figcaption>
             </figure>
             <h2 class="title">Why Nanodegrees are the future!</h2>
@@ -29,7 +32,7 @@
         <div id="others">
             <div class="blog" id="blog-1">
                 <figure>
-                    <img src="styles/images/phone-wallpaper-g7173c333b_640.jpg" alt="">
+                    <img src="styles/static/phone-wallpaper-g7173c333b_640.jpg" alt="">
                     <figcaption>Bali, Indonesia by Vecteezy</figcaption>
                 </figure>
             
@@ -39,7 +42,7 @@
                 </div>
             <div class="blog" id="blog-2">
                 <figure>
-                    <img src="styles/images/little-boy-ge84a09a8a_640.jpg" alt="">
+                    <img src="styles/static/little-boy-ge84a09a8a_640.jpg" alt="">
                     <figcaption>Child looking off by Vecteezy</figcaption>
                 </figure>
                 <h2 class="title">Making the Mundane Magical</h2>
@@ -47,30 +50,32 @@
                 <a href="main_blog_post.html">read more</a>
             </div>
        </div>
+       <footer>
         <div class="footer">
-            <div id="about">
-               
+                <div id="about">
                 
-                <div id="ft-img">
-                    <img src="styles/images/My project (2).jpg" alt="Photo of Gab">
-                    <h2>Little bit about Gab</h2>
+                    
+                    <div id="ft-img">
+                        <img src="styles/static/My project (2).jpg" alt="Photo of Gab">
+                        <h2>Little bit about Gab</h2>
+                    </div>
+                    
+                    <p>Gab was born in a small town but always had big and diverse dreams.
+                        Whatever she sets her mind on she does. Whether it be living in China for a year,
+                        switching into a whole new field(Tech) or traveling, Gab makes sure to give her all and welcomes all the adventures.
+                    </p>
                 </div>
-                
-                <p>Gab was born in a small town but always had big and diverse dreams.
-                    Whatever she sets her mind on she does. Whether it be living in China for a year,
-                    switching into a whole new field(Tech) or traveling, Gab makes sure to give her all and welcomes all the adventures.
-                </p>
+                <div id="subscribe">
+                    <h3>Not enough Gab?</h3>
+                    <form action="">
+                        <input type="email" name="" id="">
+                        <br>
+                        <br>
+                        <button id="sub-btn">Subscribe!</button>
+                    </form>
+                </div>
             </div>
-            <div id="subscribe">
-                <h3>Not enough Gab?</h3>
-                <form action="">
-                    <input type="email" name="" id="">
-                    <br>
-                    <br>
-                    <button id="sub-btn">Subscribe!</button>
-                </form>
-            </div>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
