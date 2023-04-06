@@ -1,14 +1,3 @@
-body{
-    background-color: hsla(204, 20%, 80%, 0.556);
-}
-#container{
-    display: grid;
-    
-}
-a {
-    color: #141477;
-    
-}
 /* NAV-BAR */
 
 .nav-bar{

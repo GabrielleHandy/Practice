@@ -1,0 +1,29 @@
+/* BLOGS */
+.blog{
+    text-align: center;
+    background-color: rgb(253, 248, 243);
+    border-radius: 15px;
+    margin: 50px 33px -3px 50px;
+    padding: 36px 20px 28px 20px;  
+}
+.blog img{
+    
+    width: 80%;
+    border: 2px solid;
+}
+.title{
+   
+    font-family: 'DM Serif Display', Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+.blog:hover{
+    box-shadow: #2d4d5761 0px 3px 20px 1px;
+}
+.blog a {
+    font-family: Nanum Myeongjo, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+#others{
+    display: grid;
+}
